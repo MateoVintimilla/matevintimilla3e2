@@ -8,15 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './side-menu.component.css'
 })
 export class SideMenuComponent {
-  originalTheme: string = ' rgb(250, 158, 0)'; // Set your original theme color here
-  toggleTheme(newTheme: string) {
-    if (this.theme === newTheme) {
-      this.theme = this.originalTheme;
+  originalTheme = 'rgb(250, 158, 0'; 
+  currentTheme = this.originalTheme;
+  toggleTheme() {
+    if (this.currentTheme === this.originalTheme) {
+      this.currentTheme = 'yellow';
     } else {
-      this.theme = newTheme;
+      this.currentTheme = this.originalTheme;
     }
+    this.setTheme(this.currentTheme);
   }
-  
+
+
 userName: string=" Mateo Vintmilla ";
 theme: string="";
 widthMenu:number=25;
