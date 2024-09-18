@@ -1,0 +1,42 @@
+.sidemenu-containers{
+    width: 20%;
+    height:150vh;/*altura de la pantalla*/
+    background-color: rgb(250, 158, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:30px;/*espacio entre elementos*/
+
+}
+.item{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    gap:20px;
+    margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+}
+.item p{
+
+    width:75%;
+    text-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.bnt{
+    border-radius: 20px;  
+    padding: 5px 17px; 
+     
+    background-color: rgb(250, 158, 0);
+    
+  }
+  .logo{
+    border-radius: 30px;
+    
+  }
+
+
