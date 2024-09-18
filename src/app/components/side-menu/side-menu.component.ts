@@ -16,12 +16,7 @@ export class SideMenuComponent {
       this.theme = newTheme;
     }
   }
-  animateItem(event: any) {
-    event.target.style.backgroundColor = 'red';
-  }
-  resetAnimation(event: any) {
-    event.target.style.backgroundColor = 'white'; 
-  }
+  
 userName: string=" Mateo Vintmilla ";
 theme: string="";
 widthMenu:number=25;
